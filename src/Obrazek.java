@@ -146,18 +146,27 @@ public class Obrazek
 			if (zed != null) {
 			Auto lambo = new Auto (0, 250);
 			lambo.zmenBarvu("zluta");
+
 			lambo.pomaluPosunHorizontalne(300);}
-			/*while(lamboPrislo){
-				lambo.pomaluPosunVertikalne(300);
-				lamboPrislo = false;
-			}*/
+
 		}
 		public void odchodLamba(){
 			Auto lambo = new Auto(300, 250);
-			lambo.zmenBarvu("modra");
+			lambo.zmenBarvu("zluta");
 			lambo.pomaluPosunHorizontalne(-300);
 
 			}
+
+	public void prichodTanku(){
+		Tank tank = new Tank(0,10);
+		tank.horizontalnyPosun(300);
+
+	}
+	public void odchodTanku(){
+		Tank tank = new Tank(300,10);
+		tank.horizontalnyPosun(-300);
+
+	}
 		}
 
 
